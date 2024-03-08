@@ -19,4 +19,6 @@ require("lazy").setup({
 		opts = {},
 	},
 	"tpope/vim-fugitive",
+	"nvim-tree/nvim-tree.lua",
+	"nvim-tree/nvim-web-devicons",
 })

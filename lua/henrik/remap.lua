@@ -1,5 +1,3 @@
-vim.keymap.set("n", "<leader>q", ":q<CR>") 
-
 vim.keymap.set("n", "<leader>y", "\"+y<CR>")
 vim.keymap.set("v", "<leader>y", "\"+y<CR>")
 

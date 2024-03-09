@@ -27,4 +27,8 @@ require("lazy").setup({
 	"tpope/vim-fugitive",
 	"nvim-tree/nvim-tree.lua",
 	"nvim-tree/nvim-web-devicons",
+	{
+		'nvim-lualine/lualine.nvim',
+		dependencies = { 'nvim-tree/nvim-web-devicons' }
+	},
 })

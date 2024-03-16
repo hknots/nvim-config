@@ -18,3 +18,13 @@ require('mason-lspconfig').setup({
     lsp_zero.default_setup,
   },
 })
+
+local cmp = require('cmp')
+local cmp_action = require('lsp-zero').cmp_action()
+
+cmp.setup({
+	mapping = cmp.mapping.preset.insert({
+		['<Tab>'] = cmp_action.tab_complete(),
+		['<CR>'] = cmp.mapping.confirm({select = false}),
+	}),
+})

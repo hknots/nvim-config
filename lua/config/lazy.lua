@@ -14,7 +14,17 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
-		-- import your plugins
+        {
+            "folke/tokyonight.nvim",
+            lazy = false,
+            priority = 1000,
+            opts = {},
+        },
+        {
+            'nvim-telescope/telescope.nvim', tag = '0.1.8',
+            -- or                              , branch = '0.1.x',
+            dependencies = { 'nvim-lua/plenary.nvim' }
+        }
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.

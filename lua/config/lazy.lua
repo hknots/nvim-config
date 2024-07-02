@@ -27,7 +27,10 @@ require("lazy").setup({
         },
         {
             'tpope/vim-fugitive'
-        }
+        },
+        {
+            'mbbill/undotree'
+        },
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
